@@ -17,15 +17,23 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<script src="imageModal.js"></script>
 <body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Image Modal -->
+    <div id="imageModal"
+        class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+        <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded shadow-xl">
+    </div>
+
 
     <header class="relative h-screen flex items-center justify-center bg-gray-900">
-        <div class="absolute inset-0 overflow-hidden">
+        <!-- <div class="absolute inset-0 overflow-hidden">
             <img src="https://placehold.co/1920x1080/003057/FFFFFF?text=Background+Image:+People+playing+sports+at+GT+Field" 
                  alt="GT Field Background" 
                  class="w-full h-full object-cover opacity-40">
-        </div>
+        </div> -->
 
         <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
@@ -58,28 +66,28 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <a href="#couch" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden border-t-4 border-gtGold">
-                <img src="https://placehold.co/400x250?text=Couch+Field" alt="Couch Field" class="w-full h-40 object-cover">
+                <img src="couch-field.jpg" alt="Couch Field" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-bold text-xl group-hover:text-gtNavy">Improve Drainage</h3>
                     <p class="text-sm text-gray-500 mt-1">Couch Field Renovation</p>
                 </div>
             </a>
             <a href="#peters" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden border-t-4 border-gtGold">
-                <img src="https://placehold.co/400x250?text=Peters+Deck" alt="Peters Deck" class="w-full h-40 object-cover">
+                <img src="peters-deck.png" alt="Peters Deck" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-bold text-xl group-hover:text-gtNavy">Add Lights & Benches</h3>
                     <p class="text-sm text-gray-500 mt-1">Peters Parking Deck</p>
                 </div>
             </a>
             <a href="#stamps" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden border-t-4 border-gtGold">
-                <img src="https://placehold.co/400x250?text=Stamps+Field" alt="Stamps Field" class="w-full h-40 object-cover">
+                <img src="stamps-field.jpg" alt="Stamps Field" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-bold text-xl group-hover:text-gtNavy">Re-turf Field</h3>
                     <p class="text-sm text-gray-500 mt-1">Stamps Field Update</p>
                 </div>
             </a>
             <a href="#crc" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden border-t-4 border-gtGold">
-                <img src="https://placehold.co/400x250?text=CRC+Interior" alt="CRC" class="w-full h-40 object-cover">
+                <img src="crc-rowing.jpg" alt="CRC" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-bold text-xl group-hover:text-gtNavy">Update Equipment</h3>
                     <p class="text-sm text-gray-500 mt-1">Climbing wall, Badminton, Machines</p>
@@ -115,30 +123,84 @@
                         <li><strong>Return due to sense of belonging:</strong> Mean = 1.96</li>
                         <li><strong>Satisfaction with activities offered:</strong> Mean = 2.21</li>
                         <li><strong>Creating a network of friends:</strong> Mean = 2.46</li>
+                        <li><strong>Creating a network of friends:</strong> Mean = 2.46</li>
+                        <li><strong>Trust in peers:</strong> Mean = 2.67</li>
+                        <li><strong>Lack of perceived responsibility to the university:</strong> Mean = 4.34</li>
                     </ul>
                 </div>
 
                 <div class="flex flex-col gap-8">
-                    <div class="bg-gray-100 p-6 rounded-xl">
-                        <h4 class="font-bold text-center mb-4">Correlation of Rec Facilities & Student Retention</h4>
-                        <img src="https://placehold.co/500x300?text=Graph:+Miller+and+Croft+Data" alt="Retention Graph" class="w-full rounded shadow">
+
+                    <!-- CARD 1 -->
+                    <div class="flip-card w-full h-full">
+                        <div class="flip-card-inner relative w-full h-full">
+
+                            <!-- FRONT -->
+                            <div class="flip-card-front flex flex-col bg-gray-100 p-6 rounded-xl shadow-lg">
+                            <h4 class="font-bold text-center mb-2 text-gtGold">Figure 1: GT Student Feedback</h4>
+                            <p class="text-center text-sm mb-4">
+                                "Do you ever feel discouraged from using recreational spaces at Georgia Tech?"
+                            </p>
+                            
+                            <!-- Image container -->
+                            <div class="flex-1 flex justify-center items-center mb-4 overflow-hidden">
+                                <img src="figure_1.png" alt="GT Student Feedback Graph"
+                                    class="rounded-lg w-full h-full object-contain">
+                            </div>
+
+                            <p class="text-center text-sm italic opacity-80">
+                                Based on a sample of 26 GT Students
+                            </p>
+                        </div>
+
+
+                            <!-- BACK -->
+                            <div class="flip-card-back bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col justify-center text-gray-900">
+                                <h4 class="text-xl font-bold mb-4 text-gtNavy">Key Takeaways</h4>
+                                <ul class="list-disc pl-5 space-y-2 text-sm">
+                                    <li>Many students feel discouraged due to crowding and limited availability.</li>
+                                    <li>Maintenance quality strongly affects willingness to use facilities.</li>
+                                    <li>Students report wanting more diverse recreational options.</li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div class="bg-gtNavy text-white p-6 rounded-xl shadow-lg">
-                        <h4 class="font-bold text-center mb-2 text-gtGold">Figure 1: GT Student Feedback</h4>
-                        <p class="text-center text-sm mb-4">"How would you rate the current condition of Georgia Tech's recreational facilities?"</p>
-                        
-                        <div class="flex items-end justify-center h-48 gap-4 mb-2">
-                            <div class="w-16 bg-gray-500 rounded-t h-[63%] relative group">
-                                <span class="absolute -top-6 left-0 right-0 text-center font-bold">6.38</span>
-                                <span class="absolute bottom-2 left-0 right-0 text-center text-xs text-white">Avg</span>
+                    <!-- CARD 2 -->
+                    <div class="flip-card w-full h-full">
+                        <div class="flip-card-inner relative w-full h-full">
+
+                            <!-- FRONT -->
+                            <div class="flip-card-front bg-gtNavy text-white p-6 rounded-xl shadow-lg">
+                                <h4 class="font-bold text-center mb-2 text-gtGold">Figure 2: GT Student Feedback</h4>
+                                <p class="text-center text-sm mb-4">
+                                    "How would you rate the current condition of Georgia Tech's recreational facilities?"
+                                </p>
+
+                                <div class="w-full flex justify-center mb-4">
+                                    <img src="figure_2.png" alt="GT Student Feedback Graph"
+                                        class="rounded-lg max-h-64 object-contain">
+                                </div>
+
+                                <p class="text-center text-sm italic opacity-80">
+                                    Based on a sample of 26 GT Students
+                                </p>
                             </div>
-                            <div class="w-16 bg-gray-700 h-full opacity-20 rounded-t relative">
-                                <span class="absolute -top-6 left-0 right-0 text-center text-gray-400">10</span>
-                                <span class="absolute bottom-2 left-0 right-0 text-center text-xs text-white">Max</span>
+
+                            <!-- BACK -->
+                            <div class="flip-card-back bg-gtNavy text-white p-6 rounded-xl shadow-lg flex flex-col justify-center">
+                                <h4 class="text-xl font-bold mb-4 text-gtGold">Key Metrics</h4>
+                                <ul class="list-disc pl-5 space-y-2 text-sm">
+                                    <li>Satisfaction with activity variety: Mean = 2.21</li>
+                                    <li>Sense of belonging from rec involvement: Mean = 1.96</li>
+                                    <li>Peer interaction benefit: Mean = 2.43</li>
+                                    <li>Trust in peers: Mean = 2.67</li>
+                                    <li>Responsibility to the university NOT a main factor: Mean = 4.34</li>
+                                </ul>
                             </div>
+
                         </div>
-                        <p class="text-center text-sm italic opacity-80">Based on a sample of 26 GT Students</p>
                     </div>
                 </div>
             </div>
@@ -151,8 +213,17 @@
             <div id="couch" class="scroll-mt-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div>
                     <h3 class="text-3xl font-bold text-gtNavy mb-4">1. Couch Field Drainage</h3>
-                    <p class="text-gray-700 mb-6">
+                    <!-- <p class="text-gray-700 mb-6">
                         Detailed description of the drainage issues at Couch Field and the proposed engineering solution to ensure the field is usable year-round, regardless of recent rainfall.
+                    </p> -->
+                    <p class="text-gray-700 mb-6">
+                    Burger and Couch Fields host soccer, football, ultimate frisbee, volleyball, archery club, and various other student organization activities. They are heavily trafficked but located on low-lying ground, causing water accumulation and muddy surfaces, shown in the images to the right.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <strong>Permanent Solution:</strong> Install subsurface drainage with perforated pipes, gravel layers, and channels to divert water into storm systems. Timeline: 4–6 months.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <strong>Temporary Solution:</strong> Reduce field usage after heavy rain or events to allow soil recovery. Maintenance crews can reseed, aerate, and perform minor repairs. Timeline: periodic.
                     </p>
                     <div class="grid grid-cols-2 gap-4 mb-6">
                         <div class="bg-white p-4 rounded shadow border-l-4 border-green-500">
@@ -166,8 +237,15 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-2">
-                    <img src="https://placehold.co/300x300?text=Couch+Flooding" class="rounded shadow w-full">
-                    <img src="https://placehold.co/300x300?text=Drainage+Plan" class="rounded shadow w-full">
+                    <figure class="text-center">
+                        <img src="burger_mud_1.jpg" class="rounded shadow w-full">
+                        <figcaption class="text-sm text-gray-600 mt-1">Dry field with huge dirt patches</figcaption>
+                    </figure>
+
+                    <figure class="text-center">
+                        <img src="burger_mud_2.jpg" class="rounded shadow w-full">
+                        <figcaption class="text-sm text-gray-600 mt-1">Muddy field after Rain</figcaption>
+                    </figure>
                 </div>
             </div>
 

@@ -1,0 +1,26 @@
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card-front,
+.flip-card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    inset: 0;
+    border-radius: 0.75rem; /* rounded-xl */
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* Use a class to flip on click */
+.flip-card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
