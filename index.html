@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReCreate Georgia Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gtGold: '#B3A369',
+                        gtNavy: '#003057',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <header class="relative h-screen flex items-center justify-center bg-gray-900">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://placehold.co/1920x1080/003057/FFFFFF?text=Background+Image:+People+playing+sports+at+GT+Field" 
+                 alt="GT Field Background" 
+                 class="w-full h-full object-cover opacity-40">
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+                ReCreate <span class="text-gtGold">Georgia Tech</span>
+            </h1>
+            
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20">
+                <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4">Tired of the current state of recreation?</h2>
+                <ul class="text-lg md:text-xl text-gray-200 space-y-2 text-left inline-block">
+                    <li class="flex items-center"><span class="text-gtGold mr-2">➜</span> Tired of long waits at the CRC?</li>
+                    <li class="flex items-center"><span class="text-gtGold mr-2">➜</span> Tired of no lights at Peters?</li>
+                    <li class="flex items-center"><span class="text-gtGold mr-2">➜</span> Tired of lack of equipment?</li>
+                    <li class="flex items-center"><span class="text-gtGold mr-2">➜</span> Tired of overcrowded fields?</li>
+                </ul>
+            </div>
+            
+            <div class="mt-8">
+                <a href="#intro" class="bg-gtGold text-gtNavy font-bold py-3 px-8 rounded-full hover:bg-yellow-500 transition duration-300">
+                    See Our Proposal
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="intro" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gtNavy">Our Proposals</h2>
+            <p class="text-gray-600 mt-2">Click a topic to learn more</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a href="#couch" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden border-t-4 border-gtGold">
+                <img src="https://placehold.co/400x250?text=Couch+Field" alt="Couch Field" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl group-hover:text-gtNavy">Improve Drainage</h3>
+                    <p class="text-sm text-gray-500 mt-1">Couch Field Renovation</p>
+                </div>
+            </a>
+            <a href="#peters" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden border-t-4 border-gtGold">
+                <img src="https://placehold.co/400x250?text=Peters+Deck" alt="Peters Deck" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl group-hover:text-gtNavy">Add Lights & Benches</h3>
+                    <p class="text-sm text-gray-500 mt-1">Peters Parking Deck</p>
+                </div>
+            </a>
+            <a href="#stamps" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden border-t-4 border-gtGold">
+                <img src="https://placehold.co/400x250?text=Stamps+Field" alt="Stamps Field" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl group-hover:text-gtNavy">Re-turf Field</h3>
+                    <p class="text-sm text-gray-500 mt-1">Stamps Field Update</p>
+                </div>
+            </a>
+            <a href="#crc" class="group bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden border-t-4 border-gtGold">
+                <img src="https://placehold.co/400x250?text=CRC+Interior" alt="CRC" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl group-hover:text-gtNavy">Update Equipment</h3>
+                    <p class="text-sm text-gray-500 mt-1">Climbing wall, Badminton, Machines</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gtNavy mb-10 border-b-2 border-gtGold inline-block">Why It's Important</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-6 text-gray-700 leading-relaxed">
+                    <p>
+                        <strong>Georgia Tech notes physical wellness</strong> as one of its <a href="https://wellbeingroadmaps.gatech.edu/8-dimensions-of-wellness" class="text-blue-600 hover:underline" target="_blank">8 Dimensions of Wellness</a>. This includes replenishing the body through physical activity, sleep, and nutrition.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-4 border-l-4 border-gtNavy rounded-r">
+                        <p class="italic text-sm">
+                            "Students involved in outdoor recreation have more friends, less social anxiety, and increased social support... all of which can help make their transition to university life easier."
+                            <br><span class="font-bold not-italic text-xs mt-2 block">- Andre et al., 2017</span>
+                        </p>
+                    </div>
+
+                    <p>
+                        A 2008 study of collegiate intramural sports participants showed an increase in 41 out of 41 measured outcome items, noting the greatest gains in <strong>sense of belonging, time management, school pride, and leadership development</strong> (Haines and Fortman, 2008).
+                    </p>
+
+                    <h3 class="text-xl font-bold text-gtNavy pt-4">Impact on Retention (Miller and Croft, 2022)</h3>
+                    <p class="text-sm">Participants responded on a scale from 1-5 (1 = strongly agree):</p>
+                    <ul class="list-disc pl-5 space-y-2 text-sm">
+                        <li><strong>Return due to sense of belonging:</strong> Mean = 1.96</li>
+                        <li><strong>Satisfaction with activities offered:</strong> Mean = 2.21</li>
+                        <li><strong>Creating a network of friends:</strong> Mean = 2.46</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-8">
+                    <div class="bg-gray-100 p-6 rounded-xl">
+                        <h4 class="font-bold text-center mb-4">Correlation of Rec Facilities & Student Retention</h4>
+                        <img src="https://placehold.co/500x300?text=Graph:+Miller+and+Croft+Data" alt="Retention Graph" class="w-full rounded shadow">
+                    </div>
+
+                    <div class="bg-gtNavy text-white p-6 rounded-xl shadow-lg">
+                        <h4 class="font-bold text-center mb-2 text-gtGold">Figure 1: GT Student Feedback</h4>
+                        <p class="text-center text-sm mb-4">"How would you rate the current condition of Georgia Tech's recreational facilities?"</p>
+                        
+                        <div class="flex items-end justify-center h-48 gap-4 mb-2">
+                            <div class="w-16 bg-gray-500 rounded-t h-[63%] relative group">
+                                <span class="absolute -top-6 left-0 right-0 text-center font-bold">6.38</span>
+                                <span class="absolute bottom-2 left-0 right-0 text-center text-xs text-white">Avg</span>
+                            </div>
+                            <div class="w-16 bg-gray-700 h-full opacity-20 rounded-t relative">
+                                <span class="absolute -top-6 left-0 right-0 text-center text-gray-400">10</span>
+                                <span class="absolute bottom-2 left-0 right-0 text-center text-xs text-white">Max</span>
+                            </div>
+                        </div>
+                        <p class="text-center text-sm italic opacity-80">Based on a sample of 26 GT Students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 space-y-24">
+            
+            <div id="couch" class="scroll-mt-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-gtNavy mb-4">1. Couch Field Drainage</h3>
+                    <p class="text-gray-700 mb-6">
+                        Detailed description of the drainage issues at Couch Field and the proposed engineering solution to ensure the field is usable year-round, regardless of recent rainfall.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white p-4 rounded shadow border-l-4 border-green-500">
+                            <span class="block text-gray-500 text-xs uppercase">Est. Budget</span>
+                            <span class="font-bold text-lg">$XX,XXX</span>
+                        </div>
+                        <div class="bg-white p-4 rounded shadow border-l-4 border-blue-500">
+                            <span class="block text-gray-500 text-xs uppercase">Timeline</span>
+                            <span class="font-bold text-lg">6 Months</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <img src="https://placehold.co/300x300?text=Couch+Flooding" class="rounded shadow w-full">
+                    <img src="https://placehold.co/300x300?text=Drainage+Plan" class="rounded shadow w-full">
+                </div>
+            </div>
+
+            <hr class="border-gray-300">
+
+            <div id="peters" class="scroll-mt-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="order-1 md:order-2">
+                    <h3 class="text-3xl font-bold text-gtNavy mb-4">2. Peters Deck Lights & Benches</h3>
+                    <p class="text-gray-700 mb-6">
+                        Proposal to install eco-friendly LED lighting for night usage and seating areas for student socialization and rest during games.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white p-4 rounded shadow border-l-4 border-green-500">
+                            <span class="block text-gray-500 text-xs uppercase">Est. Budget</span>
+                            <span class="font-bold text-lg">$XX,XXX</span>
+                        </div>
+                        <div class="bg-white p-4 rounded shadow border-l-4 border-blue-500">
+                            <span class="block text-gray-500 text-xs uppercase">Timeline</span>
+                            <span class="font-bold text-lg">3 Months</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-2 md:order-1 grid grid-cols-2 gap-2">
+                    <img src="https://placehold.co/300x300?text=Current+Darkness" class="rounded shadow w-full">
+                    <img src="https://placehold.co/300x300?text=Lighting+Render" class="rounded shadow w-full">
+                </div>
+            </div>
+
+            <hr class="border-gray-300">
+
+            <div id="stamps" class="scroll-mt-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-gtNavy mb-4">3. Re-turf Stamps Field</h3>
+                    <p class="text-gray-700 mb-6">
+                        The current turf is worn down and presents safety hazards. This proposal outlines the replacement with high-durability, modern athletic turf.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white p-4 rounded shadow border-l-4 border-green-500">
+                            <span class="block text-gray-500 text-xs uppercase">Est. Budget</span>
+                            <span class="font-bold text-lg">$XX,XXX</span>
+                        </div>
+                        <div class="bg-white p-4 rounded shadow border-l-4 border-blue-500">
+                            <span class="block text-gray-500 text-xs uppercase">Timeline</span>
+                            <span class="font-bold text-lg">Summer '24</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <img src="https://placehold.co/300x300?text=Worn+Turf" class="rounded shadow w-full">
+                    <img src="https://placehold.co/300x300?text=New+Turf+Sample" class="rounded shadow w-full">
+                </div>
+            </div>
+
+            <hr class="border-gray-300">
+
+            <div id="crc" class="scroll-mt-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="order-1 md:order-2">
+                    <h3 class="text-3xl font-bold text-gtNavy mb-4">4. CRC Equipment Update</h3>
+                    <p class="text-gray-700 mb-6">
+                        Updating the climbing wall holds, restringing badminton equipment, and replacing broken cardio machines to reduce wait times.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white p-4 rounded shadow border-l-4 border-green-500">
+                            <span class="block text-gray-500 text-xs uppercase">Est. Budget</span>
+                            <span class="font-bold text-lg">$XX,XXX</span>
+                        </div>
+                        <div class="bg-white p-4 rounded shadow border-l-4 border-blue-500">
+                            <span class="block text-gray-500 text-xs uppercase">Timeline</span>
+                            <span class="font-bold text-lg">Ongoing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-2 md:order-1 grid grid-cols-2 gap-2">
+                    <img src="https://placehold.co/300x300?text=Climbing+Wall" class="rounded shadow w-full">
+                    <img src="https://placehold.co/300x300?text=New+Machines" class="rounded shadow w-full">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 bg-gtNavy text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 text-gtGold">Spread The Word!</h2>
+            
+            <div class="bg-white text-gray-900 rounded-lg p-8 shadow-2xl flex flex-col md:flex-row gap-8 items-center">
+                <div class="w-full md:w-1/2">
+                    <div class="aspect-[3/4] bg-gray-200 rounded flex items-center justify-center border-2 border-gray-300 relative">
+                        <img src="poster.png" alt="Final Revised Poster" class="w-full h-full object-cover rounded">
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">Final Revised Poster</p>
+                </div>
+                
+                <div class="w-full md:w-1/2 text-left space-y-6">
+                    <h3 class="text-2xl font-bold">Join the Movement</h3>
+                    <p>Help us make these changes a reality. Sign our petition to show the administration that student wellness matters.</p>
+                    
+                    <div class="flex flex-col gap-3">
+                        <button class="bg-gtGold text-gtNavy font-bold py-3 px-6 rounded hover:bg-yellow-500 transition w-full">
+                            Sign the Petition
+                        </button>
+                        <button class="border-2 border-gtNavy text-gtNavy font-bold py-3 px-6 rounded hover:bg-gray-50 transition w-full">
+                            Contact Us
+                        </button>
+                        <button class="text-gray-500 hover:text-gtNavy underline text-sm">
+                            Download Full Project Proposal (PDF)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-500 py-8 text-xs">
+        <div class="max-w-6xl mx-auto px-4">
+            <h4 class="font-bold text-gray-400 mb-2">Sources</h4>
+            <ul class="space-y-1">
+                <li>Andre, E., Williams, N., & Schwartz, F. (2017). The Role of Outdoor Recreation in Stress Reduction.</li>
+                <li>Haines, D. & Fortman, T. (2008). Collegiate Intramural Sports and Student Development.</li>
+                <li>Miller, J. & Croft, L. (2022). Campus Recreation and Student Retention: A quantitative analysis.</li>
+                <li>Georgia Tech Wellness Roadmap. (n.d.). 8 Dimensions of Wellness.</li>
+            </ul>
+            <div class="mt-8 pt-4 border-t border-gray-800 text-center">
+                &copy; 2024 ReCreate Georgia Tech Student Initiative.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
